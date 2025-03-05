@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayan Sellou - Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Menu -->
+  <nav>
+    <div class="container">
+      <a href="#accueil" class="logo">Rayan Sellou</a>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#outils-langages">Outils & Langages</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Bouton pour basculer entre mode sombre et clair -->
+      <button id="theme-toggle" class="theme-toggle">
+      <i class="fas fa-moon"></i> <!-- Icône pour le mode sombre -->
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page d'accueil -->
+  <section id="accueil" class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Rayan Sellou</h1>
+        <p>Étudiant en 3ème année de BUT Informatique, passionné par le développement web et la gestion de projet.</p>
+        <a href="#competences" class="btn">Découvrez mes compétences</a>
+      </div>
+      <div class="hero-image">
+        <img src="img_rayan.jpg" alt="Photo de Rayan">
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="competences" class="competences">
+    <div class="container">
+      <h2>Mes Compétences</h2>
+      <div class="competences-grid">
+        <!-- Réaliser -->
+        <div class="competence-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Réaliser</h3>
+          <ul>
+            <li><strong>Niveau 1</strong> : Développer des applications informatiques simples</li>
+            <li><strong>Niveau 2</strong> : Partir des exigences jusqu'à une application complète</li>
+            <li><strong>Niveau 3</strong> : Adapter des applications sur divers supports (web, mobile, IoT)</li>
+          </ul>
+        </div>
+  
+        <!-- Optimiser -->
+        <div class="competence-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Optimiser</h3>
+          <ul>
+            <li><strong>Niveau 1</strong> : Appréhender et construire des algorithmes</li>
+            <li><strong>Niveau 2</strong> : Sélectionner les algorithmes adéquats</li>
+            <li><strong>Niveau 3</strong> : Analyser et optimiser des applications</li>
+          </ul>
+        </div>
+  
+        <!-- Administrer -->
+        <div class="competence-card">
+          <i class="fas fa-server"></i>
+          <h3>Administrer</h3>
+          <ul>
+            <li><strong>Niveau 1</strong> : Installer et configurer un poste de travail</li>
+            <li><strong>Niveau 2</strong> : Déployer des services dans une architecture réseau</li>
+          </ul>
+        </div>
+  
+        <!-- Gérer -->
+        <div class="competence-card">
+          <i class="fas fa-database"></i>
+          <h3>Gérer</h3>
+          <ul>
+            <li><strong>Niveau 1</strong> : Concevoir et mettre en place une base de données</li>
+            <li><strong>Niveau 2</strong> : Optimiser une base de données et assurer la sécurité</li>
+          </ul>
+        </div>
+  
+        <!-- Conduire -->
+        <div class="competence-card">
+          <i class="fas fa-project-diagram"></i>
+          <h3>Conduire</h3>
+          <ul>
+            <li><strong>Niveau 1</strong> : Identifier les besoins métiers des clients</li>
+            <li><strong>Niveau 2</strong> : Appliquer une démarche de suivi de projet</li>
+          </ul>
+        </div>
+  
+        <!-- Collaborer -->
+        <div class="competence-card">
+          <i class="fas fa-users"></i>
+          <h3>Collaborer</h3>
+          <ul>
+            <li><strong>Niveau 1</strong> : Identifier ses aptitudes pour travailler en équipe</li>
+            <li><strong>Niveau 2</strong> : Situer son rôle et ses missions dans une équipe</li>
+            <li><strong>Niveau 3</strong> : Manager une équipe informatique</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outils / Langages -->
+  <section id="outils-langages" class="outils-langages">
+    <div class="container">
+      <h2>Outils et Langages</h2>
+      <div class="langages-grid">
+        <!-- Langages -->
+        <div class="langage-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <p>Structuration de pages web.</p>
+        </div>
+        <div class="langage-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+          <p>Stylisation et design des pages web.</p>
+        </div>
+        <div class="langage-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>Interactivité et dynamisme des sites web.</p>
+        </div>
+        <div class="langage-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <p>Développement d'applications et scripts.</p>
+        </div>
+        <div class="langage-card">
+          <i class="fab fa-php"></i>
+          <h3>PHP</h3>
+          <p>Développement back-end pour applications web.</p>
+        </div>
+        <div class="langage-card">
+          <i class="fab fa-symfony"></i>
+          <h3>Symfony</h3>
+          <p>Framework PHP pour applications web.</p>
+        </div>
+        <div class="langage-card">
+          <i class="fab fa-angular"></i>
+          <h3>Angular</h3>
+          <p>Framework JavaScript pour applications web dynamiques.</p>
+        </div>
+        <div class="langage-card">
+          <i class="fab fa-java"></i>
+          <h3>Java</h3>
+          <p>Développement d'applications orientées objet.</p>
+        </div>
+        <div class="langage-card">
+          <i class="fas fa-database"></i>
+          <h3>SQL</h3>
+          <p>Gestion et manipulation de bases de données.</p>
+        </div>
+      </div>
+  
+      <h3>Outils</h3>
+      <div class="outils-grid">
+        <!-- Outils -->
+        <div class="outil-card">
+          <i class="fab fa-git"></i>
+          <h3>Git</h3>
+          <p>Gestion de versions et collaboration.</p>
+        </div>
+        <div class="outil-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>Hébergement de projets et collaboration.</p>
+        </div>
+        <div class="outil-card">
+          <i class="fas fa-code"></i>
+          <h3>IntelliJ</h3>
+          <p>IDE pour le développement Java et autres langages.</p>
+        </div>
+        <div class="outil-card">
+          <i class="fas fa-code"></i>
+          <h3>PyCharm</h3>
+          <p>IDE pour le développement Python.</p>
+        </div>
+        <div class="outil-card">
+          <i class="fab fa-docker"></i>
+          <h3>Docker</h3>
+          <p>Conteneurisation d'applications.</p>
+        </div>
+        <div class="outil-card">
+          <i class="fab fa-linux"></i>
+          <h3>Linux</h3>
+          <p>Système d'exploitation pour le développement.</p>
+        </div>
+        <div class="outil-card">
+          <i class="fas fa-gamepad"></i>
+          <h3>Unity</h3>
+          <p>Moteur de jeu pour le développement de jeux vidéo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expériences -->
+  <section id="experiences" class="experiences">
+    <div class="container">
+      <h2>Expériences</h2>
+      <div class="experiences-grid">
+        <!-- Stage de l'année dernière -->
+        <div class="experience-card">
+          <h3>Stage - Prompt Engineer</h3>
+          <p class="entreprise">à l'IRAP (Institut de Recherche en Astrophysique et Planétologie)</p>
+          <p class="date">Février 2024 - Avril 2024</p>
+          <ul>
+            <li>Développement d’API en Python pour intégrer des LLM et récupérer des articles scientifiques.</li>
+            <li>Utilisation d’IA locales (ex. Ollama, Claude) pour la détection, avec optimisation des prompts.</li>
+            <li>Amélioration et ajout de nouvelles fonctionnalitées à l'ancien projet.</li>
+          </ul>
+        </div>
+  
+        <!-- Nouveau stage -->
+        <div class="experience-card">
+          <h3>Stage - Développeur web</h3>
+          <p class="entreprise">à l'IFRASS (Institut de Formation Recherche Animation Santaire et Social)</p>
+          <p class="date">Avril 2024 - Juin 2024</p>
+          <ul>
+            <li>Mise à jour et correction de plugins Moodle existants pour assurer leur compatibilité avec les nouvelles versions de Moodle.</li>
+            <li>Développement d'un nouveau plugin Moodle en respectant les bonnes pratiques de développement PHP et la structure de Moodle.</li>
+            <li>Intégration de nouvelles fonctionnalités aux plugins existants pour améliorer l’expérience utilisateur et la gestion des cours.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projets" class="projets">
+    <div class="container">
+      <h2>Mes Projets</h2>
+      
+      <div class="carousel">
+        <button class="prev" onclick="prevProject()"><i class="fas fa-chevron-left"></i></button>
+        
+        <div class="projets-container">
+          <div class="projet-card active" onclick="showDetails(3, ['Réaliser', 'Gérer', 'Optimiser', 'Conduire'])">
+            <img src="screen_ecommerce.png" alt="Projet Site E-Commerce">
+            <h3>Projet Site E-Commerce</h3>
+            <p>Site e-commmerce pour l'entreprise LaBonneNote.</p>
+            <div class="projet-links">
+              <a href="https://github.com/RayanSellou/sae-3-01-devapp-Groupe-12" class="btn" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+            </div>
+            <!-- Détails du projet cachés au départ -->
+            <div class="project-details">
+              <p><strong>Description détaillée:</strong> Site e-commerce développé en PHP, incluant une gestion de produits, un panier d'achat et un module de paiement sécurisé.</p>
+              <p><strong>Compétences liées:</strong></p>
+              <ul>
+                <li>Développement web avec PHP</li>
+                <li>Gestion et optimisation de base de données MySQL</li>
+                <li>Déploiement et configuration d'un serveur</li>
+                <li>Gestion de projet et recueil des besoins clients</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="projet-card" onclick="showDetails(1, ['Réaliser', 'Gérer'])">
+            <img src="screen-qcm.png" alt="Projet QCM">
+            <h3>Projet QCM</h3>
+            <p>Application web de gestion de QCM codée en PHP Symfony.</p>
+            <div class="projet-links">
+              <a href="https://github.com/RayanSellou/sae-5-a-01-2024-2025-QCMJaune" class="btn" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+            </div>
+            <!-- Détails du projet cachés au départ -->
+            <div class="project-details">
+              <p><strong>Description détaillée:</strong> Application web développée avec PHP et Symfony, permettant la création, la gestion et la correction de QCM.</p>
+              <p><strong>Compétences liées:</strong></p>
+              <ul>
+                <li>PHP, Symfony</li>
+                <li>Gestion de bases de données MySQL</li>
+                <li>Développement backend</li>
+              </ul>
+              <ul class="competences-list"></ul> <!-- Liste dynamique des compétences -->
+            </div>
+          </div>
+
+          <div class="projet-card" onclick="showDetails(2)">
+            <img src="screen-flappy.png" alt="Projet Flappy">
+            <h3>Projet Unity</h3>
+            <p>Jeu Flappy Bird codé en C#.</p>
+            <div class="projet-links">
+              <a href="https://github.com/RayanSellou/Flappy-Bird" class="btn" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+            </div>
+            <!-- Détails du projet cachés au départ -->
+            <div class="project-details">
+              <p><strong>Description détaillée:</strong> Jeu développé sur Unity en C#, inspiré de Flappy Bird. L'objectif est de faire voler un oiseau et éviter les obstacles.</p>
+              <p><strong>Compétences liées:</strong></p>
+              <ul>
+                <li>Unity, C#</li>
+                <li>Développement de jeux vidéo</li>
+                <li>Design interactif</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="next" onclick="nextProject()"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    let currentProject = 0;
+    const projects = document.querySelectorAll('.projet-card');
+
+    function showProject(index) {
+      projects.forEach((project, i) => {
+        project.classList.remove('active');
+        if (i === index) {
+          project.classList.add('active');
+        }
+      });
+    }
+
+    function prevProject() {
+      currentProject = (currentProject - 1 + projects.length) % projects.length;
+      showProject(currentProject);
+    }
+
+    function nextProject() {
+      currentProject = (currentProject + 1) % projects.length;
+      showProject(currentProject);
+    }
+
+    showProject(currentProject);
+
+    // function showDetails(index) {
+    //   const projets = document.querySelectorAll('.projet-card');
+    //   projets.forEach((project, i) => {
+    //     project.classList.remove('active'); // Retirer la classe active de tous les projets
+    //     if (i === index) {
+    //       project.classList.add('active'); // Ajouter la classe active au projet cliqué
+    //     }
+    //   });
+    // }
+    function showDetails(index, competences) {
+      const projets = document.querySelectorAll('.projet-card');
+      projets.forEach((project, i) => {
+        project.classList.remove('active'); // Retirer la classe active des autres projets
+        if (i === index) {
+          project.classList.add('active'); // Activer le projet sélectionné
+          
+          // Mettre à jour la liste des compétences
+          const competencesList = project.querySelector('.competences-list');
+          competencesList.innerHTML = ''; // Réinitialiser la liste
+          competences.forEach(comp => {
+            const listItem = document.createElement('li');
+            listItem.textContent = comp;
+            competencesList.appendChild(listItem);
+          });
+        }
+      });
+    }
+
+    // Sélectionner le bouton de bascule
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Vérifier le mode sauvegardé dans le localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  body.setAttribute('data-theme', savedTheme);
+  updateToggleIcon(savedTheme);
+}
+
+// Fonction pour basculer entre les modes
+function toggleTheme() {
+  if (body.getAttribute('data-theme') === 'dark') {
+    body.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  } else {
+    body.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+  updateToggleIcon(body.getAttribute('data-theme'));
+}
+
+// Fonction pour mettre à jour l'icône du bouton
+function updateToggleIcon(theme) {
+  const icon = themeToggle.querySelector('i');
+  if (theme === 'dark') {
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  } else {
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  }
+}
+
+// Ajouter un écouteur d'événement au bouton
+themeToggle.addEventListener('click', toggleTheme);
+  </script>
+
+
+  <!-- CV -->
+  <section id="cv" class="cv">
+    <div class="container">
+      <h2>Mon CV</h2>
+      <p>Téléchargez mon CV pour en savoir plus sur mon parcours :</p>
+      <a href="cv.pdf" download class="btn">Télécharger mon CV</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contactez-moi</h2>
+      <form action="mailto:rayan.sellou@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/rayan-sellou/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/RayanSellou"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Rayan Sellou. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
