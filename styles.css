@@ -290,6 +290,7 @@ nav ul li a:hover {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
+  color: #cf2020;
 }
 
 .contact form {
@@ -373,6 +374,37 @@ footer {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
+}
+/* Styles pour les flèches du carrousel */
+.carousel-button {
+  background: var(--primary-color); /* Fond du bouton */
+  color: var(--white); /* Couleur de l'icône */
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.carousel-button:hover {
+  background: #8a197b; /* Couleur de fond au survol */
+  color: var(--white); /* Couleur de l'icône au survol */
+}
+
+/* Flèche précédente */
+.carousel-button.prev {
+  left: -50px; /* Position à gauche */
+}
+
+/* Flèche suivante */
+.carousel-button.next {
+  right: -50px; /* Position à droite */
+}
+
+/* Icônes FontAwesome */
+.carousel-button i {
+  color: red; /* Hérite de la couleur du bouton */
 }
 
 .projets-container {
