@@ -77,11 +77,13 @@ nav ul li a:hover {
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: #cf2020;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #cf2020;
 }
 
 .hero-text .btn {
@@ -484,7 +486,7 @@ footer {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .outils-langages h3 {
@@ -547,20 +549,24 @@ footer {
 
 /* Mode clair (par défaut) */
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2c3e50;
-  --background-color: #f4f4f4;
-  --text-color: #333;
-  --white: #fff;
+  --primary-color: #3498db; /* Bleu clair */
+  --secondary-color: #2c3e50; /* Bleu foncé */
+  --background-color: #f4f4f4; /* Gris clair */
+  --text-color: #333; /* Gris très foncé */
+  --white: #fff; /* Blanc */
+  --menu-background: #2c3e50; /* Fond du menu en mode clair */
+  --menu-text-color: #fff; /* Texte du menu en mode clair */
 }
 
 /* Mode sombre */
 [data-theme="dark"] {
-  --primary-color: #1abc9c;
-  --secondary-color: #34495e;
-  --background-color: #2c3e50;
-  --text-color: #ecf0f1;
-  --white: #34495e;
+  --primary-color: #1abc9c; /* Vert clair */
+  --secondary-color: #1e2a3a; /* Bleu très foncé */
+  --background-color: #121212; /* Noir profond */
+  --text-color: #842626; /* Gris clair pour le texte */
+  --white: #1e2a3a; /* Bleu foncé pour les cartes */
+  --menu-background: #1e2a3a; /* Fond du menu en mode sombre */
+  --menu-text-color: #e0e0e0; /* Texte du menu en mode sombre */
 }
 
 /* Bouton de bascule */
@@ -576,5 +582,80 @@ footer {
 }
 
 .theme-toggle:hover {
-  background: #2980b9;
+  background: #16a085; /* Une teinte plus foncée de la couleur principale */
+}
+
+/* Appliquer les couleurs du mode clair et sombre au menu */
+nav {
+  background: var(--menu-background);
+  color: var(--menu-text-color);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--menu-text-color);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--menu-text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Appliquer les couleurs du mode clair et sombre au texte */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Appliquer les couleurs du mode clair et sombre aux liens */
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: #16a085; /* Une teinte plus foncée de la couleur principale */
+}
+
+/* Appliquer les couleurs du mode clair et sombre aux boutons */
+.btn {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #16a085; /* Une teinte plus foncée de la couleur principale */
+}
+
+/* Icônes en mode sombre */
+[data-theme="dark"] .competence-card i,
+[data-theme="dark"] .projet-card i,
+[data-theme="dark"] .social-links a {
+  color: var(--primary-color); /* Utiliser la couleur principale pour les icônes */
 }
